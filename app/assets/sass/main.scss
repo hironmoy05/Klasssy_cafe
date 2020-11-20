@@ -7,6 +7,12 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/banner-carousel";
+@import "components/banner";
+@import "components/btn";
+
+@import "debug/debug.scss";
+
 @import "layout/footer";
 @import "layout/header";
 @import "layout/navigation";

@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <title>Klassy</title>
     <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="debug.css">
 </head>
   <body>
 
     <!-- Header Start -->
     <header class="header">
-
+      
       <!-- Logo Start -->
       <div class="header__logo">
         <img src="./assets/images/klassy-logo.png" alt="Company Logo" class="logo">
@@ -22,48 +23,50 @@
       <!-- Menu start -->
       <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
+        
         <label for="navi-toggle" class="navigation__button">
           <span class="navigation__icon">&nbsp;</span>
         </label>
-
-        <!-- <nav class="navigation__nav">
-          <ul class="nav__list">
-            <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Chefs</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
-            <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
-          </ul>
-        </nav> -->
-      </div>
+        
+        <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Menu</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Chefs</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
       <!-- Menu End -->
     </header>
     <!-- Header End -->
 
     <!-- Banner Start -->
       <div class="banner">
-
+    
         <!-- Banner content start -->
         <div class="banner__content">
           <h1 class="banner__title">KlassyCafe</h1>
           <p class="banner__subtitle">The Best Experience</p>
           
-          <a href="" class="btn btn--white">Make a reservation</a>
+          <a href="#" class="btn btn--white">Make a reservation</a>
         </div>
         <!-- Banner content end -->
 
         <!-- Banner carousel start -->
         <div class="banner__carousel">
-          <div class="banner__carousel-item">
-            <img src="./assets/images/slide-01.jpg" alt="slide-1">
+          <div class="banner__carousel-item banner__carousel-item--1 banner__carousel-item--visible">
           </div>
-          <div class="banner__carousel-item">
-            <img src="./assets/images/slide-02.jpg" alt="slide-2">
+          <div class="banner__carousel-item banner__carousel-item--2">
           </div>
-          <div class="banner__carousel-item">
-            <img src="./assets/images/slide-03.jpg" alt="slide-3">
+          <div class="banner__carousel-item banner__carousel-item--3">
+          </div>
+
+          <div class="banner__carousel__actions">
+            <button id="banner__carousel-prev"><</button>
+            <button id="banner__carousel-next">></button>
           </div>
         </div>
         <!-- Banner carousel end -->
@@ -71,7 +74,7 @@
     <!-- Banner End -->
 
     <!-- Main start -->
-      <main class="secton">
+      <main class="main-section">
 
         <!-- Section About Us start -->
         <section class="section__aboutUs">

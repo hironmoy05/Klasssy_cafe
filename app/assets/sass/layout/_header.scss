@@ -1,0 +1,10 @@
+header {
+  height: 6.3rem;
+  background-color: color(color-background);
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(color(color-black), .15);
+  align-items: center;
+  padding: 0 3em;
+  position: relative;
+}
