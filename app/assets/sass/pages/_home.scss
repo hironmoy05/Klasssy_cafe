@@ -1,0 +1,41 @@
+.main-section {
+  padding: 8rem 0;
+}
+
+.section__aboutUs {
+  padding: 0 1em 7em;
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
+    & img {
+      width: 7.5rem;
+    }
+  }
+
+  &-right {
+    position: relative;
+
+    &__link {
+      background-color: color(color-primary);
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 50%;
+      color: color(color-white);
+      border: none;
+    }
+
+    &__link,
+    &__link i {
+      @include absCenter;
+
+    }
+  }
+}
