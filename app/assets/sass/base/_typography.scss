@@ -8,7 +8,7 @@ body {
 .heading {
   display: flex;
   flex-direction: column;
-
+  
   &__secondary {
     order: 1;
     font-size: 2rem;
@@ -16,8 +16,12 @@ body {
     line-height: 1.3;
     width: 80%;
     margin-bottom: 1em;
+    
+    &--ourMenu {
+      width: 100%;
+    }
   }
-
+  
   &__tertiary {
     order: 0;
     font-size: 1rem;
@@ -30,7 +34,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-  
+    
     &::before {
       content: "";
       width: 2rem;

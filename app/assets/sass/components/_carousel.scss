@@ -1,0 +1,169 @@
+// .carousel {
+  
+//   &__item {
+
+//     &-1 {
+//       background: url('../images/menu-item-01.jpg');
+//     }
+//     &-2 {
+//       background: url('../images/menu-item-02.jpg');
+//     }
+//     &-3 {
+//       background: url('../images/menu-item-03.jpg');
+//     }
+//     &-4 {
+//       background: url('../images/menu-item-04.jpg');
+//     }
+//     &-5 {
+//       background: url('../images/menu-item-05.jpg');
+//     }
+//     &-6 {
+//       background: url('../images/menu-item-03.jpg');
+//     }
+    
+//     &-1,
+//     &-2,
+//     &-3,
+//     &-4,
+//     &-5,
+//     &-6 {
+//       background-repeat: no-repeat;
+//       background-position: top;
+//       background-size: cover;
+//     }
+    
+//     &__price,
+//     &__info {
+//       background-color: color(color-primary);
+//       position: absolute;
+//       color: color(color-white);
+//     }
+
+//     &__price {
+//       top: 0;
+//       left: 0;
+//       padding: .7em .8em;
+//       font-size: 1.5rem;
+//       font-weight: 700;
+//     }
+
+//     &__info {
+//       top: 50%;
+//       bottom: 0;
+//       padding: 1.5em 2em 2em 2em;
+//       transform: translateY(7.5rem);
+//       transition: transform .5s;
+
+//       &-link {
+//         text-decoration: none;
+//         color: inherit;
+//         display: inline-block;
+//         margin-top: 1em;
+//         font-size: .9rem;
+//       }
+    
+//       & h4 {
+//         font-size: 1.3rem;
+//         margin-bottom: 1em;
+//       }
+
+//     }
+//   }
+  
+//   &__item:hover  &__item__info {
+//     transform: translateY(0);
+//   }
+// }
+
+.swiper-slide:hover .carousel__item__info {
+   transform: translateY(0);
+}
+
+.swiper-slide {
+  background-color: #ccc;
+  
+  &--1 {
+    background: url('../images/menu-item-01.jpg');
+  }
+
+  &--2 {
+    background: url('../images/menu-item-02.jpg');
+  }
+
+  &--3 {
+    background: url('../images/menu-item-03.jpg');
+  }
+
+  &--4 {
+    background: url('../images/menu-item-04.jpg');
+  }
+
+  &--5 {
+    background: url('../images/menu-item-05.jpg');
+  }
+
+  &--6 {
+    background: url('../images/menu-item-02.jpg');
+  }
+  
+  &--7 {
+    background: url('../images/menu-item-05.jpg');
+  }
+  
+  &--8 {
+    background: url('../images/menu-item-03.jpg');
+  }
+
+
+  
+  &--1, 
+  &--2,
+  &--3,
+  &--4,
+  &--5,
+  &--6 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    object-fit: cover;
+  }
+}
+
+.carousel__item {
+    
+  &__price,
+  &__info {
+    background-color: color(color-primary);
+    position: absolute;
+    color: color(color-white);
+  }
+
+  &__price {
+    top: 0;
+    left: 0;
+    padding: .7em .8em;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__info {
+    top: 50%;
+    bottom: 0;
+    padding: 1.5em 2em 2em 2em;
+    transform: translateY(7.5rem);
+    transition: transform .5s;
+
+    &-link {
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+      margin-top: 1em;
+      font-size: .9rem;
+    }
+
+    & h4 {
+      font-size: 1.3rem;
+      margin-bottom: 1em;
+    }
+  }
+}

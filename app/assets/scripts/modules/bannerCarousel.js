@@ -1,4 +1,4 @@
-class Carousel {
+class BannerCarousel {
   constructor() {
     this.slides = document.getElementsByClassName('banner__carousel-item');
     this.prevBtn = document.getElementById('banner__carousel-prev');
@@ -44,4 +44,4 @@ class Carousel {
   }
 }
 
-export default Carousel;
+export default BannerCarousel;
