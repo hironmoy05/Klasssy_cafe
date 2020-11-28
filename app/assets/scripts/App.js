@@ -7,6 +7,7 @@ import Swiper from './modules/swiper/swiper';
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 10,
+  loop: true,
   // init: false,
   pagination: {
     el: '.swiper-pagination',
@@ -17,11 +18,11 @@ const swiper = new Swiper('.swiper-container', {
     disableOnInteraction: false,
   },
   breakpoints: {
-    240: {
+    140: {
       slidesPerView: 1,
       spaceBetween: 15,
     },
-    500: {
+    510: {
       slidesPerView: 2,
       spaceBetween: 15,
     },
