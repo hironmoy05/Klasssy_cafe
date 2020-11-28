@@ -22,19 +22,19 @@ const swiper = new Swiper('.swiper-container', {
       slidesPerView: 1,
       spaceBetween: 15,
     },
-    510: {
+    590: {
       slidesPerView: 2,
       spaceBetween: 15,
     },
-    640: {
+    840: {
       slidesPerView: 3,
       spaceBetween: 15,
     },
-    768: {
+    1100: {
       slidesPerView: 4,
       spaceBetween: 15,
     },
-    1024: {
+    1424: {
       slidesPerView: 5,
       spaceBetween: 15,
     },
