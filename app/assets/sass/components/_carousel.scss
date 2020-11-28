@@ -4,6 +4,8 @@
 
 .swiper-slide {
   background-color: #ccc;
+  border-radius: 3px;
+  overflow: hidden;
   
   &--1 {
     background: url('../images/menu-item-01.jpg');
