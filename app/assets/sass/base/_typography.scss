@@ -56,6 +56,22 @@ body {
       }
     }
   }
+
+  &--chiefs {
+    text-align: center;
+  }
+  
+  &--chiefs &__secondary {
+    font-size: 1.69rem;
+    width: 100%;
+    margin-bottom: 2.5em;
+  }
+  
+  &--chiefs &__tertiary {
+    width: auto;
+    margin: 0 auto 1.5em;
+  }
+  
 }
 
 .section__aboutUs__paragraph {
