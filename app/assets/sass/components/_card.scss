@@ -1,0 +1,98 @@
+.card {
+  height: 32.5rem;
+  padding: .3em;
+  border: 1px solid color(color-dark);
+  border-radius: 3px;
+  overflow: hidden;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__thumb {
+    height: 80%;
+
+    
+    &-1 {
+      background: url('../images/chefs-01.jpg');
+    }
+    
+    &-2 {
+      background: url('../images/chefs-02.jpg');
+    }
+    
+    &-3 {
+      background: url('../images/chefs-03.jpg');
+    }
+    
+    &-1,
+    &-2,
+    &-3 {
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 3px;
+    }
+  }
+
+  &__content {
+    padding: 1.5em 1em;
+    text-align: center;
+  }
+
+  &__chief-name {
+    font-size: 1.2rem;
+    transition: all .3s;
+  }
+
+  // Overlay
+  &__overlay {
+    background: rgba(color(color-dark), .85);
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease-out;
+  }
+
+  &__socialIcons {
+    position: absolute;
+    @include absCenter;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__facebook,
+  &__twitter,
+  &__instagram,
+  &__behance,
+  &__google {
+    font-size: 1.1rem;
+    background: color(color-white);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    list-style: none;
+    position: relative;
+    transition: .4s ease;
+
+    &:hover {
+      background: color(color-primary);
+      cursor: pointer;
+    }
+  }
+  
+  &__socialIcons a i {
+    color: color(color-dark);
+    @include absCenter;
+  }
+
+  &:hover &__overlay {
+     opacity: 1;
+     visibility: visible;
+  }
+
+  &:hover &__chief-name {
+    color: color(color-primary);
+  }
+}
