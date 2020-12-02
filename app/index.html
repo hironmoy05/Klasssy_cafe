@@ -310,21 +310,23 @@
             <!-- book Info Start -->
             <div class="book__info">
                <div class="heading">
-                 <h2 class="heading__secondary">We Leave Delicious Memory For You</h2>
-                 <h3 class="heading__tertiary">About us</h3>
+                 <h2 class="heading__secondary">Here You Can Make A Reservation Or Just walking to our cofe</h2>
+                 <h3 class="heading__tertiary heading__tertiary--color">Contact us</h3>
                </div>
 
                <p class="book__paragraph">Donec pretium est orci, non vulputate arcu hendrerit a. Fusce a eleifend riqsie, namei sollicitudin urna diam, sed commodo purus porta ut.</p>
 
                <div class="book__contact-details">
-                 <div class="book__phone">
-                   <h5 class="book__phone-numbers">Phone Numbers</h5>
+                 <div class="book__contacts">
+                  <i class="book__icon fa fa-phone"></i>
+                   <h5 class="book__contacts-way">Phone Numbers</h5>
                    <p class="book__phone-number-1">080-090-0990</p>
                    <p class="book__phone-number-2">080-090-0880</p>
                  </div>
                  
-                 <div class="book__email">
-                   <h5 class="book__emails">Emails</h5>
+                 <div class="book__contacts">
+                  <i class="book__icon fa fa-envelope"></i>
+                   <h5 class="book__contacts-way">Emails</h5>
                    <p class="book__email-1">hello@company.com</p>
                    <p class="book__email-2">info@company.com</p>
                  </div>
@@ -335,19 +337,19 @@
             <!-- Form Book start -->
             <div class="book__form">
               <form action="#" class="form">
-                <h2 class="book__heading">Table Reservation</h2>
+                <h2 class="form__heading">Table Reservation</h2>
 
                 <div class="form__group">
-                  <input type="text" name="name" id="name" placeholder="Your Name*" aria-required="true">
+                  <input type="text" name="name" id="name" class="form__input" placeholder="Your Name*" aria-required="true">
                 </div>
                 <div class="form__group">
-                  <input type="text" name="email" id="email" placeholder="Your Email Address" aria-required="true">
+                  <input type="text" name="email" id="email" class="form__input" placeholder="Your Email Address" aria-required="true">
                 </div>
                 <div class="form__group">
-                  <input type="text" name="phone" id="phone" placeholder="Phone Number*" aria-required="true">
+                  <input type="text" name="phone" id="phone" class="form__input" placeholder="Phone Number*" aria-required="true">
                 </div>
                 <div class="form__group">
-                  <select name="guest" id="guest">
+                  <select name="guest" id="guest" class="form__input">
                     <option value="guest">Number Of Guest</option>
                     <option id="1" name="1">1</option>
                     <option id="2" name="2">2</option>
@@ -357,10 +359,10 @@
                   </select>
                 </div>
                 <div class="form__group">
-                  <input type="date" name="date" id="date" aria-required="true">
+                  <input type="date" name="date" id="date" class="form__input" aria-required="true">
                 </div>
                 <div class="form__group">
-                  <select name="time" id="time">
+                  <select name="time" id="time" class="form__input">
                     <option value="time">Time</option>
                     <option id="BreakFast" name="BreakFast">BreakFast</option>
                     <option id="Lunch" name="Lunch">Lunch</option>
@@ -369,11 +371,11 @@
                 </div>
 
                 <div class="form__group">
-                  <textarea name="message" id="message" rows="6" placeholder="Message" required></textarea>
+                  <textarea name="message" id="message" rows="6"  class="form__input" placeholder="Message" required></textarea>
                 </div>
 
                 <div class="form__group">
-                  <button type="submit" class="btn btn-red" id="form__submit">Make A Reservation</button>
+                  <button type="submit" class="btn btn--red" id="form__submit">Make A Reservation</button>
                 </div>
               </form>
             </div>
@@ -587,23 +589,23 @@
     <!-- Footer Start -->
     <footer class="footer">
       <div class="social">
-        <ul class="card__socialIcons">
-          <li class="card__facebook">
+        <ul class="footer__socialIcons">
+          <li class="footer__facebook">
             <a href="#">
               <i class="fa fa-facebok"></i>
             </a>
           </li>
-          <li class="card__tweeter">
+          <li class="footer__tweeter">
             <a href="#">
               <i class="fa fa-tweeter"></i>
             </a>
           </li>
-          <li class="card__linkedin">
+          <li class="footer__linkedin">
             <a href="#">
               <i class="fa fa-linkedin"></i>
             </a>
           </li>
-          <li class="card__instagram">
+          <li class="footer__instagram">
             <a href="#">
               <i class="fa fa-instagram"></i>
             </a>
@@ -624,47 +626,6 @@
     </footer>
     <!-- Footer End -->
     
-
-     <!-- Swiper JS -->
-
-  <!-- Initialize Swiper -->
-  <!-- <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      // init: false,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        240: {
-          slidesPerView: 1,
-          spaceBetween: 15,
-        },
-        375: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 15,
-        },
-        1024: {
-          slidesPerView: 5,
-          spaceBetween: 15,
-        },
-      }
-    });
-  </script> -->
     <script src="bundled.js"></script>
   </body>
 </html>

@@ -55,6 +55,14 @@ body {
         height: 0;
       }
     }
+
+    &--color {
+      color: color(color-white);
+
+      &::before {
+        background-color: color(color-white);
+      }
+    }
   }
 
   &--chiefs {
