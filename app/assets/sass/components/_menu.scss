@@ -1,0 +1,88 @@
+.menu {
+
+  &__mealTime {
+    margin-bottom: 4em;
+  }
+
+  &__tabs {
+    width: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5em;
+
+    & li {
+      list-style: none;
+    }
+
+    & li a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: color(color-dark);
+      font-weight: 600;
+    }
+
+    & li a img {
+      margin-bottom: 1em;
+    }
+  }
+
+  // Content
+
+  .menu__content {
+    position: relative;
+
+  }
+  
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4em;
+    
+    &__description {
+      margin-left: 1em;
+      width: 90%;
+    }
+    
+    &-heading {
+      font-size: 1.1rem;
+      color: rgba(color(color-dark), .9);
+    }
+    
+    &-description {
+      font-size: .9rem;
+      color: rgba(color(color-dark), .7);
+    }
+    
+    &__price {
+      background-color: color(color-primary);
+      color: color(color-white);
+      padding: 1.4em .2em;
+      font-weight: 800;
+      width: 20%;
+      text-align: center;
+    }
+  }
+}
+
+.menu__content {
+  display: flex;
+  position: relative;
+}
+
+article {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hidden {
+   display: none;
+}
+
+.active {
+  color: color(color-primary) !important;
+}

@@ -1,9 +1,9 @@
 .banner {
-
+  
   &__carousel {
     position: relative;
   }
-
+  
   &__carousel-item {
     &--1 {
       background: url('../images/slide-01.jpg');
@@ -20,16 +20,16 @@
     height: 100%;
     animation: moveToLeft .5s;
   }
-
+  
   &__carousel-item,
   &__carousel-item--hidden {
     display: none;
   }
-
+  
   &__carousel-item--visible {
     display: block;
   }
-
+  
   &__carousel__actions {
     position: absolute;
     top: 50%;
@@ -54,7 +54,7 @@
   border-radius: 50%;
   opacity: .4;
   transition: all .3s;
-
+  
   &:hover,
   &:active {
     opacity: 1;

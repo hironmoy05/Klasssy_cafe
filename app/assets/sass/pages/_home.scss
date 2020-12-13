@@ -61,3 +61,19 @@
   background-size: cover;
   color: color(color-white);
 }
+
+// SECTION WEEK
+.section__week {
+  padding: 8em 1em;
+
+  & .heading {
+    width: 120%;
+    text-align: center;
+
+    & .heading__tertiary {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    } 
+  }
+}

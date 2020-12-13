@@ -43,6 +43,39 @@ const swiper = new Swiper('.swiper-container', {
 
 new BannerCarousel();
 
+// Food
+const menuTabs = document.querySelector('.menu__tabs');
+const menuContent = document.querySelectorAll('article');
+const link = document.querySelectorAll('.icon-link');
+
+menuContent[0].classList.remove('hidden');
+
+function slideFood(e) {
+  for (let i = 0; i < menuContent.length; i++) {
+    menuContent[i].classList.add('hidden');
+    link[i].classList.remove('active');
+  };
+
+  if (e.target.parentElement.parentElement.classList.contains('menu__BreakFast') || e.target.classList.contains('menu__BreakFast-link')) {
+    menuContent[0].classList.remove('hidden');
+    link[0].classList.add('active');
+  }
+
+  if (e.target.parentElement.parentElement.classList.contains('menu__Lunch') || e.target.classList.contains('menu__Lunch-link')) {
+    menuContent[1].classList.remove('hidden');
+    link[1].classList.add('active');
+  }
+
+  if (e.target.parentElement.parentElement.classList.contains('menu__Dinner') || e.target.classList.contains('menu__Dinner-link')) {
+    menuContent[2].classList.remove('hidden');
+    link[2].classList.add('active');
+  }
+}
+
+menuTabs.addEventListener('click', slideFood);
+
+
+
 if (module.hot) {
   module.hot.accept();
 }
