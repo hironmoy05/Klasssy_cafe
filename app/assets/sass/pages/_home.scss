@@ -1,3 +1,7 @@
+main {
+  position: relative;
+}
+
 .main-section {
   padding: 8rem 0;
 }
@@ -67,13 +71,17 @@
   padding: 8em 1em;
 
   & .heading {
-    width: 120%;
+    width: 100%;
     text-align: center;
 
-    & .heading__tertiary {
-      width: 50%;
-      margin-left: auto;
-      margin-right: auto;
+    & .heading__secondary {
+      width: 100%;
+    }
+
+   & .heading__tertiary {
+      display: flex;
+      justify-content: center;
     } 
   }
+
 }
