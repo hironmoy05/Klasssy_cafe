@@ -1,5 +1,46 @@
 .footer {
-  margin-top: 43em;
+  margin-top: 50em;
   width: 100%;
-  background-color: lawngreen;
+  padding: 3.5em 2em;
+  background-color: color(color-primary);
+  text-align: center;
+  
+  & > *:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+  
+  &__socialIcons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  &__icon {
+    position: relative;  
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: color(color-white);
+    cursor: pointer;
+    
+    &:not(:last-child) {
+      margin-right: 1em;
+    }
+    
+    & a {
+      font-size: 1.2rem;
+      @include absCenter;
+      color: color(color-primary);
+      transition: all .5s;
+    }
+    
+    &:hover a {
+      color: unset;
+    }
+  }
+  
+  & .copyright {
+    font-size: .9rem;
+    color: color(color-white);
+  }
 }
