@@ -1,8 +1,10 @@
 import "../sass/main.scss";
-
 import BannerCarousel from "./modules/bannerCarousel";
-
 import Swiper from './modules/swiper/swiper';
+import StickyHeader from './modules/stickyHeader';
+
+
+let stickyHeader = new StickyHeader();
 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
@@ -51,6 +53,7 @@ const link = document.querySelectorAll('.icon-link');
 menuContent[0].classList.remove('hidden');
 
 function slideFood(e) {
+
   for (let i = 0; i < menuContent.length; i++) {
     menuContent[i].classList.add('hidden');
     link[i].classList.remove('active');
